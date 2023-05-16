@@ -26,7 +26,7 @@ import (
 	"pkg.berachain.dev/polaris/eth/common"
 )
 
-const DefaultEIP155ChainID = 69420
+const DefaultEIP155ChainID = 4200
 
 var DefaultChainConfig = &ChainConfig{
 	ChainID:                       big.NewInt(DefaultEIP155ChainID),
