@@ -97,7 +97,7 @@ if [[ $overwrite == "y" || $overwrite == "Y" ]]; then
 	# Test Account
 	# absurd surge gather author blanket acquire proof struggle runway attract cereal quiz tattoo shed almost sudden survey boring film memory picnic favorite verb tank
 	# 0xfffdbb37105441e14b0ee6330d855d8504ff39e705c3afa8f859ac9865f99306
-	./bin/polard genesis add-genesis-account did:fury:polar1yrene6g2zwjttemf0c65fscg8w8c55w5vhc9hd 69000000000000000000000000afury --keyring-backend $KEYRING --home "$HOMEDIR"
+	./bin/polard genesis add-genesis-account did:fury:polar1e98t6rfxyndw3w6kfzuj0q0yf7r507rgtz0p9g 69000000000000000000000000afury --keyring-backend $KEYRING --home "$HOMEDIR"
 
 	# Sign genesis transaction
 	./bin/polard genesis gentx ${KEYS[0]} 1000000000000000000000afury --keyring-backend $KEYRING --chain-id $CHAINID --home "$HOMEDIR"
