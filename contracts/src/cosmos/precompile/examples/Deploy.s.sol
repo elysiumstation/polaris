@@ -31,7 +31,7 @@ import "../Staking.sol";
 import "./LiquidStaking.sol";
 
 contract Deploy is Script {
-    address precompile = address(0xd9A998CaC66092748FfEc7cFBD155Aae1737C2fF);
+    address precompile = address(0x21e283524309CD7eC9B789B43F073e93e43e1B8f);
 
     // TODO: script is broken because it runs its own evm; need Foundry fix.
 

@@ -33,7 +33,7 @@ import (
 var _ = Describe("Address", func() {
 	It("should return the correct address", func() {
 		addr := common.HexToAddress("0xCd8c4Cb0C7f93a2B74B3e522a1C7BE35bE1Fbc73")
-		bech32 := "cosmos1ekxyevx8lyazka9nu532r3a7xklpl0rnjrc2a9"
+		bech32 := "did:fury:polar1ekxyevx8lyazka9nu532r3a7xklpl0rnjrc2a9"
 		acc, err := sdk.AccAddressFromBech32(bech32)
 		Expect(err).NotTo(HaveOccurred())
 		addr2 := cosmlib.AccAddressToEthAddress(acc)
@@ -47,7 +47,7 @@ var _ = Describe("Address", func() {
 
 		ethAddr2 := cosmlib.AddressToValAddress(addr)
 		bech3222 := sdk.MustBech32ifyAddressBytes(sdk.GetConfig().GetBech32ValidatorAddrPrefix(), ethAddr2.Bytes())
-		Expect(bech3222).To(Equal("cosmosvaloper1ekxyevx8lyazka9nu532r3a7xklpl0rnhhvl3k"))
+		Expect(bech3222).To(Equal("did:fury:valoper1ekxyevx8lyazka9nu532r3a7xklpl0rnhhvl3k"))
 
 	})
 })

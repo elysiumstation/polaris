@@ -36,7 +36,7 @@ import {Cosmos} from "../../CosmosTypes.sol";
  */
 contract Fundraiser is Owned {
     // State
-    IBankModule public immutable bank = IBankModule(0x4381dC2aB14285160c808659aEe005D51255adD7);
+    IBankModule public immutable bank = IBankModule(0x21e283524309CD7eC9B789B43F073e93e43e1B8f);
 
     constructor() Owned(msg.sender) {}
 
