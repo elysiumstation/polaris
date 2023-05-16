@@ -42,7 +42,7 @@ const (
 )
 
 // StartPolarisNetwork starts a new in-memory Polaris chain.
-func StartClockendNetwork(t network.TestingT) (*network.Network, *ethclient.Client) {
+func StartPolarisNetwork(t network.TestingT) (*network.Network, *ethclient.Client) {
 	var err error
 	net := network.New(t)
 	time.Sleep(1 * time.Second)
