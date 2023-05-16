@@ -202,10 +202,10 @@ func (_PrecompileConstructor *PrecompileConstructorTransactorRaw) Transact(opts 
 	return _PrecompileConstructor.Contract.contract.Transact(opts, method, params...)
 }
 
-// Abera is a free data retrieval call binding the contract method 0x558f2084.
+// Afury is a free data retrieval call binding the contract method 0x558f2084.
 //
 // Solidity: function afury() view returns(address)
-func (_PrecompileConstructor *PrecompileConstructorCaller) Abera(opts *bind.CallOpts) (common.Address, error) {
+func (_PrecompileConstructor *PrecompileConstructorCaller) Afury(opts *bind.CallOpts) (common.Address, error) {
 	var out []interface{}
 	err := _PrecompileConstructor.contract.Call(opts, &out, "afury")
 
@@ -219,18 +219,18 @@ func (_PrecompileConstructor *PrecompileConstructorCaller) Abera(opts *bind.Call
 
 }
 
-// Abera is a free data retrieval call binding the contract method 0x558f2084.
+// Afury is a free data retrieval call binding the contract method 0x558f2084.
 //
 // Solidity: function afury() view returns(address)
-func (_PrecompileConstructor *PrecompileConstructorSession) Abera() (common.Address, error) {
-	return _PrecompileConstructor.Contract.Abera(&_PrecompileConstructor.CallOpts)
+func (_PrecompileConstructor *PrecompileConstructorSession) Afury() (common.Address, error) {
+	return _PrecompileConstructor.Contract.Afury(&_PrecompileConstructor.CallOpts)
 }
 
-// Abera is a free data retrieval call binding the contract method 0x558f2084.
+// Afury is a free data retrieval call binding the contract method 0x558f2084.
 //
 // Solidity: function afury() view returns(address)
-func (_PrecompileConstructor *PrecompileConstructorCallerSession) Abera() (common.Address, error) {
-	return _PrecompileConstructor.Contract.Abera(&_PrecompileConstructor.CallOpts)
+func (_PrecompileConstructor *PrecompileConstructorCallerSession) Afury() (common.Address, error) {
+	return _PrecompileConstructor.Contract.Afury(&_PrecompileConstructor.CallOpts)
 }
 
 // Denom is a free data retrieval call binding the contract method 0xc370b042.

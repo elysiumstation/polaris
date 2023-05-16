@@ -42,7 +42,7 @@ var _ = Describe("Miscellaneous Precompile Tests", func() {
 			err = tf.Network.WaitForNextBlock()
 			Expect(err).NotTo(HaveOccurred())
 
-			afuryAddr, err := contract.Abera(nil)
+			afuryAddr, err := contract.Afury(nil)
 			Expect(err).NotTo(HaveOccurred())
 			Expect(afuryAddr).ToNot(BeEmpty())
 			afuryStr, err := contract.Denom(nil)
