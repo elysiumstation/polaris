@@ -197,16 +197,16 @@ func BuildGenesisState(keysMap map[string]*ethsecp256k1.PrivKey) map[string]json
 func getTestMetadata() []banktypes.Metadata {
 	return []banktypes.Metadata{
 		{
-			Name:        "Berachain bera",
-			Symbol:      "BERA",
+			Name:        "Furychain fury",
+			Symbol:      "FURY",
 			Description: "The Bera.",
 			DenomUnits: []*banktypes.DenomUnit{
-				{Denom: "bera", Exponent: uint32(0), Aliases: []string{"bera"}},
-				{Denom: "nbera", Exponent: uint32(9), Aliases: []string{"nanobera"}},
-				{Denom: "afury", Exponent: uint32(18), Aliases: []string{"attobera"}},
+				{Denom: "fury", Exponent: uint32(0), Aliases: []string{"fury"}},
+				{Denom: "nfury", Exponent: uint32(9), Aliases: []string{"nanofury"}},
+				{Denom: "afury", Exponent: uint32(18), Aliases: []string{"attofury"}},
 			},
 			Base:    "afury",
-			Display: "bera",
+			Display: "fury",
 		},
 		{
 			Name:        "Token",

@@ -548,16 +548,16 @@ var _ = Describe("Bank Precompile Test", func() {
 
 			It("should succeed", func() {
 				expectedResult := generated.IBankModuleDenomMetadata{
-					Name:        "Berachain bera",
-					Symbol:      "BERA",
-					Description: "The Bera.",
+					Name:        "Furychain fury",
+					Symbol:      "FURY",
+					Description: "The Fury.",
 					DenomUnits: []generated.IBankModuleDenomUnit{
-						{Denom: "bera", Exponent: uint32(0), Aliases: []string{"bera"}},
-						{Denom: "nbera", Exponent: uint32(9), Aliases: []string{"nanobera"}},
-						{Denom: "afury", Exponent: uint32(18), Aliases: []string{"attobera"}},
+						{Denom: "fury", Exponent: uint32(0), Aliases: []string{"fury"}},
+						{Denom: "nfury", Exponent: uint32(9), Aliases: []string{"nanofury"}},
+						{Denom: "afury", Exponent: uint32(18), Aliases: []string{"attofury"}},
 					},
 					Base:    "afury",
-					Display: "bera",
+					Display: "fury",
 				}
 
 				metadata := getTestMetadata()
@@ -730,16 +730,16 @@ func FundAccount(ctx sdk.Context, bk bankkeeper.BaseKeeper, account sdk.AccAddre
 func getTestMetadata() []banktypes.Metadata {
 	return []banktypes.Metadata{
 		{
-			Name:        "Berachain bera",
-			Symbol:      "BERA",
-			Description: "The Bera.",
+			Name:        "Furychain fury",
+			Symbol:      "FURY",
+			Description: "The Fury.",
 			DenomUnits: []*banktypes.DenomUnit{
-				{Denom: "bera", Exponent: uint32(0), Aliases: []string{"bera"}},
-				{Denom: "nbera", Exponent: uint32(9), Aliases: []string{"nanobera"}},
-				{Denom: "afury", Exponent: uint32(18), Aliases: []string{"attobera"}},
+				{Denom: "fury", Exponent: uint32(0), Aliases: []string{"fury"}},
+				{Denom: "nfury", Exponent: uint32(9), Aliases: []string{"nanofury"}},
+				{Denom: "afury", Exponent: uint32(18), Aliases: []string{"attofury"}},
 			},
 			Base:    "afury",
-			Display: "bera",
+			Display: "fury",
 		},
 		{
 			Name:        "Token",
