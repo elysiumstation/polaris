@@ -199,7 +199,7 @@ func getTestMetadata() []banktypes.Metadata {
 		{
 			Name:        "Furychain fury",
 			Symbol:      "FURY",
-			Description: "The Bera.",
+			Description: "The Fury.",
 			DenomUnits: []*banktypes.DenomUnit{
 				{Denom: "fury", Exponent: uint32(0), Aliases: []string{"fury"}},
 				{Denom: "nfury", Exponent: uint32(9), Aliases: []string{"nanofury"}},
